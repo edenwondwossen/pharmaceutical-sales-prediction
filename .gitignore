@@ -1,0 +1,18 @@
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# due to using tox and pytest
+.tox
+.cache
+data/*
+!/data/**/
+!**/*.dvc
+env/
+.env
+
