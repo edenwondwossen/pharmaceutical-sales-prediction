@@ -1,5 +1,11 @@
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 def descriptive_stats(df, describe=False, info=False, size=False):
     summary = None
@@ -139,18 +145,24 @@ def drop_columns(df, columns):
     else:
         print(f"{count} columns were dropped.")
 
-def plot_counts(self, column, second_column=None, type=None):
+def plot_counts(df, column, second_column=None, type=None):
        
     if type == "univariate":
         plt.figure(figsize=(12, 6))
-        sns.countplot(data=self.df, x=column)
+        sns.countplot(data=df, x=column)
         plt.title(f"Unique value counts of the {column} columns")
         plt.show()
     elif type == "bivariate":
         plt.figure(figsize=(12, 6))
-        sns.countplot(data=self.df, x=second_column, hue=column)
+        sns.countplot(data=df, x=second_column, hue=column)
         plt.title(f"{column} vs {second_column}")
         plt.show()
+    return
+
+def plot_hist(df, column, color:str='cornflowerblue'):
+    sns.displot(data=df, x=column, color=color, kde=True, height=6, aspect=2)
+    plt.title(f'Distribution of {column}', size=20, fontweight='bold')
+    plt.show()
     return
 
 def correlation_analysis(self):
