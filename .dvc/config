@@ -1,5 +1,6 @@
 [core]
     remote = localremote
     analytics = false
+    autostage = true
 ['remote "localremote"']
     url = C:/Users/dell/AppData/Local/Temp/dvc-storage
