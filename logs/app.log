@@ -1,0 +1,6 @@
+23-05-2022 14:44:31 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/store.csv.
+23-05-2022 14:44:34 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/train.csv.
+23-05-2022 14:45:26 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/train.csv.
+23-05-2022 14:45:26 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/store.csv.
+23-05-2022 14:46:06 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/merged.csv.
+23-05-2022 14:57:12 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/test.csv.
