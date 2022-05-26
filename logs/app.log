@@ -1,6 +1,102 @@
-23-05-2022 14:44:31 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/store.csv.
-23-05-2022 14:44:34 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/train.csv.
-23-05-2022 14:45:26 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/train.csv.
-23-05-2022 14:45:26 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/store.csv.
-23-05-2022 14:46:06 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/merged.csv.
-23-05-2022 14:57:12 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/test.csv.
+26-05-2022 09:19:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:19:19 - [ERROR] -  file_handler - (file_handler.py).read_csv(line 31) - File not found.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '..\\data\\eda\\test.csv'
+26-05-2022 09:19:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:21:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:21:19 - [ERROR] -  file_handler - (file_handler.py).read_csv(line 31) - File not found.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '..\\data\\eda\\test.csv'
+26-05-2022 09:21:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:21:53 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:21:53 - [ERROR] -  file_handler - (file_handler.py).read_csv(line 31) - File not found.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 26, in read_csv
+    df = pd.read_csv(csv_path, na_values=missing_values)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\util\_decorators.py", line 311, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 680, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 575, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 933, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\parsers\readers.py", line 1217, in _make_engine
+    self.handles = get_handle(  # type: ignore[call-overload]
+  File "C:\Users\dell\anaconda3\lib\site-packages\pandas\io\common.py", line 789, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '\\test.csv'
+26-05-2022 09:21:53 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:25:39 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:25:40 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:25:40 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:27:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:27:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:27:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:31:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:31:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:31:58 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:35:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:35:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:35:19 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:36:51 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:36:51 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:36:51 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:37:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:37:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:37:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:37:42 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:37:43 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:37:43 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:40:33 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:40:33 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:40:33 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:41:31 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:41:31 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:41:31 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:42:06 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:42:06 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:42:06 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:43:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:43:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:43:11 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:43:55 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:43:55 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:43:55 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:50:02 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:50:02 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:50:02 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:51:44 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:51:45 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:51:45 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 09:58:40 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 09:58:40 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 09:58:40 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
