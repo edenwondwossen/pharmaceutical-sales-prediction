@@ -1,0 +1,24 @@
+artifact_path: model
+flavors:
+  python_function:
+    env: conda.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    python_version: 3.9.7
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.0.2
+mlflow_version: 1.26.0
+model_uuid: 7480d158a5554be1bb3b5428f0dbb69f
+run_id: d578573b165d41c291f9686c3f0317a6
+signature:
+  inputs: '[{"name": "Store", "type": "long"}, {"name": "DayOfWeek", "type": "long"},
+    {"name": "Open", "type": "long"}, {"name": "Promo", "type": "long"}, {"name":
+    "StateHoliday", "type": "long"}, {"name": "SchoolHoliday", "type": "long"}, {"name":
+    "Year", "type": "long"}, {"name": "Month", "type": "long"}, {"name": "DayOfMonth",
+    "type": "long"}, {"name": "WeekOfYear", "type": "long"}, {"name": "weekday", "type":
+    "long"}, {"name": "part_of_month", "type": "long"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2022-05-26 18:02:34.911217'

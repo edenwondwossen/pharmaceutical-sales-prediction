@@ -12,16 +12,12 @@ Config.FEATURES_PATH.mkdir(parents=True, exist_ok=True)
 
 file_handler = FileHandler()
 
-train_df = file_handler.read_csv(str(Config.DATASET_PATH / "eda/train.csv"))
-test_df = file_handler.read_csv(str(Config.DATASET_PATH / "test.csv"))
-store_df = file_handler.read_csv(str(Config.DATASET_PATH / "eda/store.csv"))
+train_df = file_handler.read_csv(str(Config.DATASET_FILE_PATH / "eda/train.csv"))
+test_df = file_handler.read_csv(str(Config.DATASET_FILE_PATH / "test.csv"))
+store_df = file_handler.read_csv(str(Config.DATASET_FILE_PATH / "eda/store.csv"))
 
 #Converting to string since it is a mixed data type
 convert_to_string(train_df, ['StateHoliday'])
-
-def merge(df, store):
-    df_merge = pd.merge(df, store, on='Store')
-    return df_merge
 
 def get_part_of_month(day):
     if (day < 10):
@@ -32,7 +28,6 @@ def get_part_of_month(day):
         return 2
 
 def extract_test_features(df):
-    df = merge(df, store_df)
     df['Date'] = pd.to_datetime(df['Date'])
     df['Year'] = df['Date'].apply(lambda x: x.year)
     df['Month'] = df['Date'].apply(lambda x: x.month)
@@ -46,12 +41,10 @@ def extract_test_features(df):
     # since machines understand only numbers change categorical variables to numerical value
     lb = LabelEncoder()
     df['StateHoliday'] = lb.fit_transform(df['StateHoliday'])
-    df['Assortment'] = lb.fit_transform(df['Assortment'])
-    df['StoreType'] = lb.fit_transform(df['StoreType'])
 
     df = df.drop(columns=['Id', 'Date'], axis=1)
     return df
-    
+
 def extract_features(df):
     df = df[df['Open'] == 1]
     df["part_of_month"] = df["DayOfMonth"].apply(get_part_of_month)
@@ -62,14 +55,6 @@ def extract_features(df):
 
     df = df.drop(columns=['Sales', 'Customers', 'Date'], axis=1)
     return df
-
-def extract_sales(df):
-    df = df[df['Open'] == 1]
-    return df[["Sales"]]
-
-def extract_customers(df):
-    df = df[df['Open'] == 1]
-    return df[["Customers"]]
 
 def extract_sales(df):
     df = df[df['Open'] == 1]
