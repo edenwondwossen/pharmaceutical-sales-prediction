@@ -4,3 +4,79 @@
 23-05-2022 14:45:26 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/store.csv.
 23-05-2022 14:46:06 - [INFO] -  file_handler - (file_handler.py).to_csv(line 19) - Csv file saved in ../data/eda/merged.csv.
 23-05-2022 14:57:12 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ../data/test.csv.
+26-05-2022 13:45:36 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 13:45:36 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 13:45:36 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 20:27:29 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_2022-05-26-20-27-29 2022-05-26-17:27:29.pkl'
+26-05-2022 20:32:13 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_2022-05-26-20-32-13 2022-05-26-17:32:13.pkl'
+26-05-2022 20:35:20 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_2022-05-26-20-35-20 2022-05-26-17:35:20.pkl'
+26-05-2022 20:40:24 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_2022-05-26-20-40-24 2022-05-26-17:40:24.pkl'
+26-05-2022 20:41:02 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_2022-05-26-20-41-02 2022-05-26-17:41:02.pkl'
+26-05-2022 20:43:20 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_Sales 2022-05-26-17:43:20.pkl'
+26-05-2022 20:43:55 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_Customers 2022-05-26-17:43:55.pkl'
+26-05-2022 20:50:05 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_Sales 2022-05-26-17:50:05.pkl'
+26-05-2022 20:50:42 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 49, in save_model
+    pickle.dump(model, open(str(name), "wb"))
+OSError: [Errno 22] Invalid argument: '..\\models\\Random Forest Regressor_Customers 2022-05-26-17:50:42.pkl'
+26-05-2022 21:01:10 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 50, in save_model
+    my_logger.info("file saved as csv")
+NameError: name 'my_logger' is not defined
+26-05-2022 21:01:50 - [ERROR] -  file_handler - (file_handler.py).save_model(line 53) - Model saving failed.
+Traceback (most recent call last):
+  File "C:\Users\dell\OneDrive\Desktop\pharmaceutical-sales-prediction\scripts\file_handler.py", line 50, in save_model
+    self.logger.info("file saved as csv")
+NameError: name 'my_logger' is not defined
+26-05-2022 21:02:42 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:03:16 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:07:04 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:07:46 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:23:33 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:28:02 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:28:38 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:30:28 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:31:02 - [INFO] -  file_handler - (file_handler.py).save_model(line 50) - file saved as csv
+26-05-2022 21:38:10 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 21:38:10 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 21:38:10 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 21:38:53 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 21:38:53 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 21:38:53 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.
+26-05-2022 21:39:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\train.csv.
+26-05-2022 21:39:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\test.csv.
+26-05-2022 21:39:13 - [INFO] -  file_handler - (file_handler.py).read_csv(line 27) - Csv file read from ..\data\eda\store.csv.

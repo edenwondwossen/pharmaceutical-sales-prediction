@@ -43,11 +43,11 @@ class FileHandler():
 
     def save_model(self, model, model_name):
         try:
-            time = strftime("%Y-%m-%d-%H:%M:%S", gmtime())
-            name = Config.MODELS_PATH / str(f'{model_name} {time}.pkl')
-            Config.MODELS_PATH.mkdir(parents=True, exist_ok=True)
+
+            time = strftime("%Y-%m-%d-%H:%M", gmtime())
+            name = Config.MODELS_PATH / str(model_name + "-" + time + ".pkl")
             pickle.dump(model, open(str(name), "wb"))
-            self.logger.info(f'{model_name} model { model_name + time }.pkl saved in {Config.MODELS_PATH}.')
+            self.logger.info("file saved as csv")
 
         except Exception:
             self.logger.exception("Model saving failed.")
