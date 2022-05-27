@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/dell/OneDrive/Desktop/pharmaceutical-sales-prediction/scripts/mlruns/1/dd3453981c324ca4b02a696337443eaa/artifacts
+end_time: 1653585915029
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: dd3453981c324ca4b02a696337443eaa
+run_uuid: dd3453981c324ca4b02a696337443eaa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1653585881157
+status: 3
+tags: []
+user_id: dell

@@ -16,3 +16,6 @@ data/*
 env/
 .env
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
