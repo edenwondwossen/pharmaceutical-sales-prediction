@@ -1,6 +1,6 @@
 import pandas as pd
 import pickle
-import dvc.api
+#import dvc.api
 from time import gmtime, strftime
 import sys, os
 from config import Config
