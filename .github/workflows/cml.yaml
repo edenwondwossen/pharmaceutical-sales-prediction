@@ -10,16 +10,13 @@ jobs:
       - name: train time series model
         run: |
           pip install -r requirements.txt
-          cd models/
-          python time_series_model.py
+          cd scripts/
+          python modelling.py
       - name: Write CML report
         run: |
           cd img/
           echo "## Model Training Completed" > report.md
           echo "### Sales Model" >> report.md
           echo "### Model training history" >> report.md
-          cml-publish TimeSeriesModel-Sales.png --md >> report.md
-          echo "### Customers Model" >> report.md
-          echo "### Model training history" >> report.md
-          cml-publish TimeSeriesModel-Customers.png --md >> report.md
-          cml-send-comment report.md
+          cml-publish LSTM.png --md >> report.md
+          cml send-comment report.md
